@@ -1,0 +1,13 @@
+/**************** File System Module and Express.js **************************/
+var fs = require("fs");
+// Synchronous Form
+1. It block the execution of next line in program and wait till the task associated with file is completed
+2. It uses Sync key-word(in syntax)
+3. Least preferred due to blocking 
+4. Eg. fs.readFileSync('input text')
+
+// Asynchronous Form
+1. It does not block the execution of program and executes the program without waiting for the completion of the task associated with file
+2. It uses callback function
+3. Most preferred due to non-blocking 
+4. Eg. fs.readFile('input text', function(err, data){})
